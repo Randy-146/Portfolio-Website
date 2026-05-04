@@ -1,6 +1,330 @@
-:root{
-primary: #273786;
-secondary: #3B86B4;
-uiprimary: #00722A;
-uisecondary: #4C8140;
+:root {
+    --primary: #273786;
+    --secondary: #3B86B4;
+    --uiprimary: #00722A;
+    --uisecondary: #4C8140;
+    --resumecolor: #043382;
+}
+
+* {
+    color: white;
+    margin: 0;
+}
+
+body {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-index,
+.hero-aboutme,
+.hero-portfolio,
+.hero-contact {
+    width: 100vw;
+    height: 250px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--uiprimary);
+    text-decoration: none;
+    height: 6vh;
+    width: 120px;
+}
+
+a:hover {
+    background-color: var(--uisecondary);
+    transition: 0.2s ease;
+    scale: 1.1;
+}
+
+p {
+    font-size: x-large;
+}
+
+.nav-bar {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    width: 100vw;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+.indexcardcontainer,
+.aboutmecardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.aboutmecard,
+.portfoliocard,
+.resumecard,
+.timelinecard,
+.contactcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    width: 45vw;
+    height: 25vh;
+    padding: 20px;
+    margin: 5px;
+}
+
+.summary {
+    background-color: var(--primary);
+    width: 30vw;
+    margin: 40px;
+}
+
+.yearplans,
+.achievements,
+.reflection,
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary);
+    margin: 5px;
+    width: 40vw;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.welcome,
+.quote,
+.casestudydesc,
+.thanks {
+    width:500px;
+}
+
+.portfoliosubsection {
+    margin: 20px;
+}
+
+.bioshield,
+.pawpal,
+.eecu,
+.enrichment-essay,
+.attention-essay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 40vw;
+    background-color: var(--primary);
+    padding: 10px
+}
+
+.codingcardcontainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.eecu {
+    align-self: center;
+}
+
+.bioshieldproject,
+.pawpalproject,
+.eecuproject {
+margin: 30px;
+}
+
+.bioshieldwebsite,
+.pawpalwebsite,
+.eecuwebsite {
+height: 55vh;
+width: 40vw;
+}
+
+.essaycardcontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.enrichment-essay,
+.attention-essay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    padding: 30px;
+}
+
+.contactmethods {
+    background-color: var(--primary);
+    width: 60vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 20px;
+}
+
+a.facebook,
+a.instagram,
+a.linkedin {
+    display: inline-block;
+    text-decoration: underline;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+a.facebook {
+    width: 50vw;
+}
+
+a.facebook:hover,
+a.instagram:hover,
+a.linkedin:hover {
+scale:1.0
+}
+
+.contacttitle {
+    align-self: center;
+}
+
+.resumesummary {
+    width: 30vw;
+}
+
+button {
+    background-color: var(--uiprimary);
+    border: 0px;
+    border-radius: 40px;
+    font-size: xx-large;
+    padding: 20px;
+    margin: 30px;
+}
+
+#showresume {
+margin-right: 2.5vw;
+}
+
+#closeresume {
+margin-left: 2.5vw;
+}
+
+.resume {
+    background-color: white;
+}
+
+.resumeheader {
+    display: flex;
+    justify-content: space-around;
+    font-size: xxx-large;
+    padding: 10px;
+    background-color: var(--resumecolor)
+}
+
+.resume-title {
+    background-color: var(--resumecolor);
+    width: max-content;
+    padding: 10px;
+    border-radius: 14px;
+    font-size: x-large;
+}
+
+.webdesignersummary,
+ul,
+li,
+strong {
+    color: black;
+}
+
+.professionalsummary {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin-top: 10px;
+}
+
+.resumecontact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+a.github,
+a.resumelinkedin {
+    color: rgb(0, 106, 177);
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0);
+    width: 12vw;
+}
+
+a.github:hover,
+a.resumelinkedin:hover {
+    scale: 1.0;
+}
+
+.summarycontact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectskills {
+display: flex;
+justify-content: space-around;
+height: 30vh;
+}
+
+.skillsettechnical, 
+.skillsetsocial,
+.bioshieldoverview,
+.pawpaloverview,
+.zoologixoverview {
+    color: black;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+width: 20vw;
+}
+
+p.eventdesc,
+h3.eventdate {
+    color: black;
 }
