@@ -53,12 +53,16 @@ p {
     font-size: x-large;
 }
 
+p:first-child {
+    color: grey;
+}
+
 .nav-bar {
     background-color: var(--primary);
     display: flex;
     justify-content: space-around;
     padding: 5px;
-    width: 100vw;
+    width: 99vw;
 }
 
 .introduction {
@@ -121,7 +125,7 @@ h1 {
 .quote,
 .casestudydesc,
 .thanks {
-    width:500px;
+    width: 500px;
 }
 
 .portfoliosubsection {
@@ -143,7 +147,7 @@ h1 {
 }
 
 .codingcardcontainer {
-    width: 100vw;
+    width: 85vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -157,20 +161,20 @@ h1 {
 .bioshieldproject,
 .pawpalproject,
 .eecuproject {
-margin: 30px;
+    margin: 30px;
 }
 
 .bioshieldwebsite,
 .pawpalwebsite,
 .eecuwebsite {
-height: 55vh;
-width: 40vw;
+    height: 55vh;
+    width: 40vw;
 }
 
 .essaycardcontainer {
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    width: 85vw;
 }
 
 .enrichment-essay,
@@ -210,7 +214,7 @@ a.facebook {
 a.facebook:hover,
 a.instagram:hover,
 a.linkedin:hover {
-scale:1.0
+    scale: 1.0
 }
 
 .contacttitle {
@@ -219,6 +223,10 @@ scale:1.0
 
 .resumesummary {
     width: 30vw;
+}
+
+#resume {
+    display: none;
 }
 
 button {
@@ -231,11 +239,11 @@ button {
 }
 
 #showresume {
-margin-right: 2.5vw;
+    margin-right: 2.5vw;
 }
 
 #closeresume {
-margin-left: 2.5vw;
+    margin-left: 2.5vw;
 }
 
 .resume {
@@ -297,12 +305,12 @@ a.resumelinkedin:hover {
 }
 
 .projectskills {
-display: flex;
-justify-content: space-around;
-height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
 }
 
-.skillsettechnical, 
+.skillsettechnical,
 .skillsetsocial,
 .bioshieldoverview,
 .pawpaloverview,
@@ -317,14 +325,97 @@ height: 30vh;
     height: 20vh;
 }
 
-.event {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-width: 20vw;
-}
-
 p.eventdesc,
 h3.eventdate {
     color: black;
+}
+
+#showresume,
+#closeresume {
+    cursor: pointer;
+}
+
+/*timeline section*/
+
+.timelinecontainer {
+    width: 800px;
+}
+
+.timelinecontainer::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1000px;
+    background-color: white;
+    top: 200px;
+    left: 50%;
+    margin-right: 2px;
+    border-radius: 2px;
+}
+
+.event {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.event:nth-child(even) {
+    left: 0;
+}
+
+.event:nth-child(odd) {
+    left: 55%;
+}
+
+.event h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.timelineimg {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    right: -53px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    padding: 5px;
+}
+
+.event:nth-child(odd) .timelineimg {
+    right: 97%;
+}
+
+.eventdesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2px;
+    background-repeat: no-repeat;
+    margin: 20px;
+    margin-left: 15px;
+    width: fit-content;
+    height: max-content;
+}
+
+.eventdesc::after {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    top: 130px;
+    background-color: white;
+    left: 80%;
+    margin-right: 2px;
+    border-radius: 2px;
+}
+
+#owl {
+    top: 140px;
 }
