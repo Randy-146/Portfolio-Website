@@ -23,7 +23,7 @@ body {
 .hero-portfolio,
 .hero-contact {
     width: 100vw;
-    height: 250px;
+    height: 450px;
 }
 
 body {
@@ -53,16 +53,20 @@ p {
     font-size: x-large;
 }
 
-p:first-child {
-    color: grey;
+strong:first-child {
+    color: white;
 }
 
 .nav-bar {
     background-color: var(--primary);
     display: flex;
     justify-content: space-around;
-    padding: 5px;
-    width: 99vw;
+    padding: 15px;
+    width: 100vw;
+}
+
+#navlink {
+margin-top: 5px;
 }
 
 .introduction {
@@ -115,6 +119,10 @@ p:first-child {
     width: 40vw;
     justify-content: space-around;
     padding: 10px;
+}
+
+.hobbies {
+    align-self: flex-start;
 }
 
 h1 {
@@ -182,7 +190,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 20vh;
+    height: min-content;
     padding: 30px;
 }
 
@@ -227,6 +235,8 @@ a.linkedin:hover {
 
 #resume {
     display: none;
+    background-color: white;
+    height: 95vh;
 }
 
 button {
@@ -246,14 +256,10 @@ button {
     margin-left: 2.5vw;
 }
 
-.resume {
-    background-color: white;
-}
-
 .resumeheader {
     display: flex;
     justify-content: space-around;
-    font-size: xxx-large;
+    font-size: xx-large;
     padding: 10px;
     background-color: var(--resumecolor)
 }
@@ -276,7 +282,7 @@ strong {
 .professionalsummary {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 30vw;
     margin-top: 10px;
 }
 
@@ -284,6 +290,7 @@ strong {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    width: 30vw;
 }
 
 a.github,
@@ -304,6 +311,10 @@ a.resumelinkedin:hover {
     justify-content: space-around;
 }
 
+.projects {
+    height: 400px;
+}
+
 .projectskills {
     display: flex;
     justify-content: space-around;
@@ -314,7 +325,8 @@ a.resumelinkedin:hover {
 .skillsetsocial,
 .bioshieldoverview,
 .pawpaloverview,
-.zoologixoverview {
+.zoologixoverview,
+.zengardenoverview {
     color: black;
 }
 
@@ -322,7 +334,8 @@ a.resumelinkedin:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 20vh;
+    margin-top: 50px;
+    height: 100px;
 }
 
 p.eventdesc,
@@ -345,9 +358,9 @@ h3.eventdate {
     content: '';
     position: absolute;
     width: 20px;
-    height: 1000px;
+    height: 1400px;
     background-color: white;
-    top: 200px;
+    top: 235px;
     left: 50%;
     margin-right: 2px;
     border-radius: 2px;
@@ -404,15 +417,41 @@ h3.eventdate {
     height: max-content;
 }
 
-.eventdesc::after {
+#bioshieldevent:after,
+#EECUevent:after {
     content: '';
     position: absolute;
     width: 90px;
     height: 20px;
     top: 130px;
+    z-index: -1;
     background-color: white;
     left: 80%;
-    margin-right: 2px;
+    border-radius: 2px;
+}
+
+#beginjourney:after,
+#pawpalevent:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    top: 130px;
+    z-index: -1;
+    background-color: white;
+    left: 0%;
+    border-radius: 2px;
+}
+
+#controllerevent:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    top: 270px;
+    z-index: -1;
+    background-color: white;
+    left: 0%;
     border-radius: 2px;
 }
 
