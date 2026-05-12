@@ -65,8 +65,13 @@ strong:first-child {
     width: 100vw;
 }
 
-#navlink {
-margin-top: 5px;
+.welcomelink,
+.aboutmelink,
+.portfoliolink,
+.resumelink,
+.timelinelink,
+.contactlink {
+    margin-top: 5px;
 }
 
 .introduction {
