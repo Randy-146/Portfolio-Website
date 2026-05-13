@@ -51,6 +51,7 @@ a:hover {
 
 p {
     font-size: x-large;
+    z-index: 1;
 }
 
 strong:first-child {
@@ -96,7 +97,7 @@ margin-top: 5px;
     align-items: center;
     background-color: var(--primary);
     width: 45vw;
-    height: 25vh;
+    height: min-content;
     padding: 20px;
     margin: 5px;
 }
@@ -116,7 +117,7 @@ margin-top: 5px;
     align-items: center;
     background-color: var(--primary);
     margin: 5px;
-    width: 40vw;
+    width: 50vw;
     justify-content: space-around;
     padding: 10px;
 }
@@ -192,6 +193,13 @@ h1 {
     justify-content: space-around;
     height: min-content;
     padding: 30px;
+}
+
+.treeimg,
+.mirrorimg,
+.trophyimg,
+.blueprintimg {
+    width: 15vw;
 }
 
 .contactmethods {
